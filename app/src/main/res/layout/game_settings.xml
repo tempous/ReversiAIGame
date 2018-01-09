@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/defaultBackground"
+    android:orientation="vertical"
+
+    android:paddingTop="20.0dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:text="ReversiAI"
+        android:textColor="@color/colorHeader"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageButton
+            android:id="@+id/blackPiece"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/stroke"
+            android:onClick="selectBlack"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle_black_image" />
+
+        <ImageButton
+            android:id="@+id/whitePiece"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:onClick="selectWhite"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle_white_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:max="5"
+            android:progress="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:fontFamily="serif-monospace"
+            android:onClick="startGame"
+            android:text="@string/btn_start_game"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

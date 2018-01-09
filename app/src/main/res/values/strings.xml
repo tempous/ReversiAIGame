@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReversiAI</string>
+    <string name="moves">Игра началась</string>
+    <string name="btn_start_game">Запустить игру</string>
+</resources>
