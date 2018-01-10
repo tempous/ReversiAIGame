@@ -5,25 +5,25 @@ import java.util.ArrayList;
 
 public class GameState {
 
-    int amountOfBlackPieces;
-    boolean[][] blackMovesPossible = (boolean[][]) Array.newInstance(Boolean.TYPE, new int[]{8, 8});
-    ArrayList<String>[][] blackPossibleDirections = (ArrayList[][]) Array.newInstance(ArrayList.class, new int[]{8, 8});
-    boolean isBlackTurn;
-    boolean previousBlackTurn;
+    int countOfBlackChips;
+    boolean[][] blackMovesPossible = (boolean[][]) Array.newInstance(Boolean.TYPE, 8, 8);
+    ArrayList[][] blackPossibleDirections = (ArrayList[][]) Array.newInstance(ArrayList.class, 8, 8);
+    boolean isBlackMove;
+    boolean previousBlackMove;
 
-    int amountOfWhitePieces;
-    boolean[][] whiteMovesPossible = (boolean[][]) Array.newInstance(Boolean.TYPE, new int[]{8, 8});
-    ArrayList<String>[][] whitePossibleDirections = (ArrayList[][]) Array.newInstance(ArrayList.class, new int[]{8, 8});
-    boolean isWhiteTurn;
-    boolean previousWhiteTurn;
+    int countOfWhiteChips;
+    boolean[][] whiteMovesPossible = (boolean[][]) Array.newInstance(Boolean.TYPE, 8, 8);
+    ArrayList[][] whitePossibleDirections = (ArrayList[][]) Array.newInstance(ArrayList.class, 8, 8);
+    boolean isWhiteMove;
+    boolean previousWhiteMove;
 
-    int[][] gameBoard = (int[][]) Array.newInstance(Integer.TYPE, new int[]{8, 8});
-    boolean gameEnd;
+    int[][] gameBoard = (int[][]) Array.newInstance(Integer.TYPE, 8, 8);
+    boolean isEndOfGame;
     int previousMoveColumn;
     int previousMoveRow;
-    int aiLevel;
-    int aiPlayer;
-    int humanPlayer;
+    int opponentLevel;
+    int opponentPlayer;
+    int Player;
     int gameIndex;
 
     GameState() {
